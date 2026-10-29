@@ -1,0 +1,31 @@
+# Example dashboard theme. Install: copy to ~/.hermes/dashboard-themes/
+# then pick "Starter Slate" in the dashboard's theme switcher.
+# Every key is optional; see the Hermes docs "Extending the Dashboard".
+name: starter-slate
+label: Starter Slate
+description: Slate background, soft white text, blue primary
+
+palette:
+  background: "#11161D"
+  midground: "#DCE3EA"
+  foreground:
+    hex: "#ffffff"
+    alpha: 0
+  warmGlow: "rgba(79, 156, 249, 0.14)"
+  noiseOpacity: 0.4
+
+typography:
+  fontSans: '"Inter", ui-sans-serif, system-ui, sans-serif'
+  fontMono: '"JetBrains Mono", ui-monospace, monospace'
+  fontUrl: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+  baseSize: "15px"
+  lineHeight: "1.6"
+
+layout:
+  radius: "0.6rem"
+  density: comfortable
+
+colorOverrides:
+  primary: "#4F9CF9"
+  primaryForeground: "#0B1220"
+  ring: "#4F9CF9"

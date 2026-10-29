@@ -1,0 +1,33 @@
+/* Per-module CSS, loaded by the core when the module is imported. */
+.hello-card {
+  max-width: 36rem;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-card);
+  color: var(--color-card-foreground);
+}
+.hello-card h2 { margin: 0 0 0.75rem; font-size: 1.1rem; }
+.hello-facts { display: grid; grid-template-columns: max-content 1fr; gap: 0.35rem 1rem; margin: 0 0 1rem; }
+.hello-facts dt { color: var(--color-muted-foreground); }
+.hello-facts dd { margin: 0; }
+.hello-echo { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.hello-echo input {
+  flex: 1 1 12rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--color-input, var(--color-border));
+  border-radius: var(--radius);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+.hello-echo button {
+  padding: 0.45rem 0.9rem;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+  font: inherit;
+  cursor: pointer;
+}
+.hello-out { min-height: 1.2em; margin: 0.75rem 0 0; font-size: 0.9rem; }

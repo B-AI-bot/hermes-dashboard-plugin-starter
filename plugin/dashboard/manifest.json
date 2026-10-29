@@ -1,0 +1,11 @@
+{
+  "name": "starter",
+  "label": "Starter",
+  "description": "Example Hermes dashboard plugin: a core shell that loads drop-in ES modules and their FastAPI routes",
+  "icon": "Sparkles",
+  "version": "0.1.0",
+  "tab": { "path": "/starter", "position": "after:skills" },
+  "entry": "dist/index.js",
+  "css": "dist/style.css",
+  "api": "plugin_api.py"
+}

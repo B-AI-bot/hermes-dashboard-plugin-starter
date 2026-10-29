@@ -1,0 +1,17 @@
+/* Core shell styles. Built only on the dashboard's theme tokens
+   (--color-*, --radius), so the plugin follows whatever theme is active. */
+.starter-root { padding: 1rem 0; }
+.starter-shell { display: flex; flex-direction: column; gap: 1rem; }
+.starter-tabs { display: flex; gap: 0.25rem; border-bottom: 1px solid var(--color-border); }
+.starter-tab {
+  padding: 0.5rem 0.9rem;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: var(--color-muted-foreground);
+  font: inherit;
+  cursor: pointer;
+}
+.starter-tab[aria-selected="true"] { color: var(--color-foreground); border-bottom-color: var(--color-primary); }
+.starter-tab:focus-visible { outline: 2px solid var(--color-ring); outline-offset: 2px; }
+.starter-empty { color: var(--color-muted-foreground); font-size: 0.9rem; }
